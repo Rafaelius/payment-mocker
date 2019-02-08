@@ -1,5 +1,81 @@
 // Payment style
 
+// LOSANGO
+// -----------------------------------------------
+/*
+body{
+	background-color: #D3D3D3;
+
+	.payment-data .step{
+		background-color: #D3D3D3;
+	}
+
+	.payment-group{
+		background: none;
+	}
+
+	.payment-group-item{
+		border-color: #C8CCC7;
+	}
+	.payment-group-list-btn{
+		width: auto;
+	}
+}
+*/
+.bg-sprite{
+	background: url('../../img/sprite-losango.png') no-repeat;
+}
+.bg-ico-card {
+    width: 41px; height: 41px;
+    background-position: -1px -115px;
+}
+.bg-ico-parcelas {
+    width: 44px; height: 46px;
+    background-position: -1px -67px;
+}
+.bg-ico-safe {
+    width: 43px; height: 40px;
+    background-position: -47px -67px;
+}
+.bg-logo-losango {
+    width: 212px; height: 64px;
+    background-position: -1px -1px;
+}
+.payment-title-box{
+	margin-bottom: 25px;
+}
+h3.payment-losango-title{
+	display: block;
+	text-indent: -999em;
+	margin: 52px auto;
+}
+p.payment-losango-benefit-title{
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	
+	.bg-ico{
+		position: absolute;
+		right: 100%;
+		top: 0;
+	}
+}
+p.payment-losango-benefit-description{
+	font-size: 12px;
+}
+span.title-strong{
+	font-weight: bold;
+	color:#CC092F;
+}
+.payment-losango-benefit{
+	padding-left: 43px;
+}
+.payment-losango-benefits{
+	border-top: 1px dotted #000;
+	border-bottom: 1px dotted #000;
+	padding: 25px 0;
+	margin-bottom: 52px;
+}
 // safetypay
 // -----------------------------------------------
 h3.payment-newpayment-title {
@@ -41,7 +117,14 @@ h3.payment-newpayment-title {
   .payment-newpayment-benefit-title {
     background: none;
     padding-top: 0;
-  }
+	}
+}
+
+@media (max-width: 767px) {
+  
+	li.payment-losango-benefit{
+		margin-bottom: 25px;
+	}
 }
 
 @media (max-width: 979px) {
