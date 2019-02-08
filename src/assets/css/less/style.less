@@ -23,23 +23,27 @@ body{
 }
 */
 .bg-sprite{
-	background: url('../../img/sprite-losango.png') no-repeat;
-}
-.bg-ico-card {
-    width: 41px; height: 41px;
-    background-position: -1px -115px;
-}
-.bg-ico-parcelas {
-    width: 44px; height: 46px;
-    background-position: -1px -67px;
+	// background: url('../../img/sprite-losango.png') no-repeat;
+	background: url('../../img/sprite.svg') no-repeat;
 }
 .bg-ico-safe {
-    width: 43px; height: 40px;
-    background-position: -47px -67px;
+    background-position: -27px -18px;
+	width: 69px; height: 66px;
+	transform: scale(0.6)
+}
+.bg-ico-parcelas {
+    background-position: -112px -18px;
+	width: 69px; height: 66px;
+	transform: scale(0.6)
+}
+.bg-ico-time {
+    background-position: -184px -18px;
+	width: 69px; height: 66px;
+	transform: scale(0.6)
 }
 .bg-logo-losango {
-    width: 212px; height: 64px;
-    background-position: -1px -1px;
+    width: 196px; height: 52px;
+    background-position: -47px -108px;
 }
 .payment-title-box{
 	margin-bottom: 25px;
@@ -47,17 +51,35 @@ body{
 h3.payment-losango-title{
 	display: block;
 	text-indent: -999em;
-	margin: 52px auto;
+	margin: 30px auto;
+}
+li.payment-losango-benefit{
+	position: relative;
+	
+	&::after{
+		content:'';
+		position: absolute;
+		right: 0;
+		top:50%;
+		transform: translateY(-50%);
+		width: 2px;
+		height: 10px;
+		background: url('../../img/sprite.svg') no-repeat -100px 100px;
+	}
 }
 p.payment-losango-benefit-title{
 	font-size: 14px;
 	font-weight: bold;
 	position: relative;
+
+	&:last-child{
+		border-right: none;
+	}
 	
 	.bg-ico{
 		position: absolute;
-		right: 100%;
-		top: 0;
+		right: 101%;
+		top: -10px;
 	}
 }
 p.payment-losango-benefit-description{
@@ -68,11 +90,9 @@ span.title-strong{
 	color:#CC092F;
 }
 .payment-losango-benefit{
-	padding-left: 43px;
+	padding-left: 45px;
 }
 .payment-losango-benefits{
-	border-top: 1px dotted #000;
-	border-bottom: 1px dotted #000;
 	padding: 25px 0;
 	margin-bottom: 52px;
 }
@@ -124,6 +144,10 @@ h3.payment-newpayment-title {
   
 	li.payment-losango-benefit{
 		margin-bottom: 25px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 }
 
