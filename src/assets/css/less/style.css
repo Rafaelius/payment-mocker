@@ -52,18 +52,35 @@ h3.payment-losango-title {
   text-indent: -999em;
   margin: 30px auto;
 }
+.payment-losango-benefits {
+  padding: 25px 0;
+  margin-bottom: 52px;
+}
 li.payment-losango-benefit {
   position: relative;
+  padding-left: 51px;
+  padding-right: 15px;
+  border-right: 1px dotted #555;
+  border-width: 2px;
+  /* 	
+	&::after{
+		content:'';
+		position: absolute;
+		right: 0;
+		top:50%;
+		transform: translateY(-50%);
+		width: 2px;
+		height: 100px;
+		background: url('../../img/sprite.svg') no-repeat -145px -176px;
+		display: none;
+	} */
+  /* &:last-child::after{
+		background: none;
+	} */
 }
-li.payment-losango-benefit::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2px;
-  height: 10px;
-  background: url('../../img/sprite.svg') no-repeat -100px 100px;
+li.payment-losango-benefit:last-child {
+  border-right: none;
+  padding-right: 5px;
 }
 p.payment-losango-benefit-title {
   font-size: 14px;
@@ -75,7 +92,7 @@ p.payment-losango-benefit-title:last-child {
 }
 p.payment-losango-benefit-title .bg-ico {
   position: absolute;
-  right: 101%;
+  right: 90%;
   top: -10px;
 }
 p.payment-losango-benefit-description {
@@ -84,13 +101,6 @@ p.payment-losango-benefit-description {
 span.title-strong {
   font-weight: bold;
   color: #CC092F;
-}
-.payment-losango-benefit {
-  padding-left: 45px;
-}
-.payment-losango-benefits {
-  padding: 25px 0;
-  margin-bottom: 52px;
 }
 h3.payment-newpayment-title {
   background: #00a3db url('../../img/payment-safetypay-title.png') center center no-repeat;
@@ -141,9 +151,19 @@ h3.payment-newpayment-title {
 @media (max-width: 767px) {
   li.payment-losango-benefit {
     margin-bottom: 25px;
+    /* &::after{
+			display: none;
+		}
+		 */
+    border-right: none;
   }
   li.payment-losango-benefit:last-child {
     margin-bottom: 0;
+  }
+  p.payment-losango-benefit-title .bg-ico {
+    position: absolute;
+    right: 100%;
+    top: -10px;
   }
 }
 @media (max-width: 979px) {
