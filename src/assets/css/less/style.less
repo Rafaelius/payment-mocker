@@ -2,32 +2,15 @@
 
 // LOSANGO
 // -----------------------------------------------
-/*
-body{
-	background-color: #D3D3D3;
-
-	.payment-data .step{
-		background-color: #D3D3D3;
-	}
-
-	.payment-group{
-		background: none;
-	}
-
-	.payment-group-item{
-		border-color: #C8CCC7;
-	}
-	.payment-group-list-btn{
-		width: auto;
-	}
+.steps-view{
+	width: 430px;
 }
-*/
 .bg-sprite{
 	// background: url('../../img/sprite-losango.png') no-repeat;
 	background: url('../../img/sprite.svg') no-repeat;
 }
 .bg-ico-safe {
-    background-position: -27px -18px;
+    background-position: -184px -18px;
 	width: 69px; height: 66px;
 	transform: scale(0.6)
 }
@@ -37,7 +20,7 @@ body{
 	transform: scale(0.6)
 }
 .bg-ico-time {
-    background-position: -184px -18px;
+    background-position: -27px -18px;
 	width: 69px; height: 66px;
 	transform: scale(0.6)
 }
@@ -51,16 +34,26 @@ body{
 h3.payment-losango-title{
 	display: block;
 	text-indent: -999em;
-	margin: 30px auto;
+	margin: 14px auto;
+}
+h2.payment-losango-benefit-secondary-title{
+	color:#CC092F;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+}
+.payment-losango-help{
+	font-size: 10px;
+	text-align: center;
 }
 .payment-losango-benefits{
 	padding: 25px 0;
-	margin-bottom: 52px;
+	margin-bottom: 0;
 }
 li.payment-losango-benefit{
 	position: relative;
-	padding-left: 51px;
-	padding-right: 15px;
+	padding-left: 42px;
+	padding-right: 5px;
 
 	border-right: 1px dotted #555;
 	border-width: 2px;
@@ -79,7 +72,6 @@ li.payment-losango-benefit{
 
 	&:last-child{
 		border-right: none;
-		padding-right: 5px
 	}
 
 	/* &:last-child::after{
@@ -98,11 +90,12 @@ p.payment-losango-benefit-title{
 	.bg-ico{
 		position: absolute;
 		right: 90%;
-		top: -10px;
+		top: -14px;
 	}
 }
 p.payment-losango-benefit-description{
-	font-size: 12px;
+	font-size: 11px;
+	line-height: 13pt;
 }
 span.title-strong{
 	font-weight: bold;
@@ -147,9 +140,9 @@ h3.payment-newpayment-title {
 }
 
 @media (max-width: 490px) {
-  .payment-newpayment-benefit-title {
-    background: none;
-    padding-top: 0;
+	.payment-newpayment-benefit-title {
+		background: none;
+		padding-top: 0;
 	}
 }
 
@@ -157,11 +150,6 @@ h3.payment-newpayment-title {
   
 	li.payment-losango-benefit{
 		margin-bottom: 25px;
-
-		/* &::after{
-			display: none;
-		}
-		 */
 		border-right: none;
 
 		&:last-child{
@@ -180,7 +168,10 @@ h3.payment-newpayment-title {
 }
 
 @media (max-width: 979px) {
-  .payment-newpayment-benefit {
-    overflow: hidden;
-  }
+	li.payment-losango-benefit{
+		padding-left: 52px;
+	}
+	.payment-newpayment-benefit {
+		overflow: hidden;
+	}
 }
