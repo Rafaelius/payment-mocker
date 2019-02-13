@@ -412,13 +412,11 @@
                               </a> 
                               <!-- /ko -->
                               <!-- /ko --> <!-- ko if: showAsTab --> 
-                              <a class="payment-group-item active" data-bind="click: $parent.selectPaymentGroup, attr:{ 'id':'payment-group-' + groupName(), 'class': className + ' payment-group-item' }, css: { active: $parent.selectedPaymentGroupId() == id }" href="javascript:void(0);" id="payment-group-losangoPaymentGroup">
+                              <a id="payment-group-losangoPaymentGroup" class="payment-group-item active" data-bind="click: $parent.selectPaymentGroup, attr:{ 'id':'payment-group-' + groupName(), 'class': className + ' payment-group-item' }, css: { active: $parent.selectedPaymentGroupId() == id }" href="javascript:void(0);" id="payment-group-losangoPaymentGroup">
                                 <span class="payment-group-item-text" data-bind="text: localizedLabel">Losango</span>
-                                <!-- 
-                                  icones aqui
-                                  <span class="payment-newpayment-benefit-fast">
-                                  <p class="payment-newpayment-benefit-title"></p>
-                                </span> -->
+                                  <!-- <span class="payment-newpayment-benefit-fast">
+                                  <p class="payment-newpayment-benefit-title"></p> 
+                                </span>-->
                               </a> 
                               <!-- /ko -->
                             </div>

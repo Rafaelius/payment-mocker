@@ -2331,6 +2331,9 @@ a.client-masked-info {
 #payment-group-TodoPagoPaymentGroup .payment-group-item-text {
   background-image: url('../img/ico-todopago.png');
 }
+#payment-group-losangoPaymentGroup .payment-group-item-text {
+  background-image: url('../img/ico-losango.svg');
+}
 .store-country-ECU #payment-group-lotteryPaymentGroup .payment-group-item-text,
 .store-country-MEX #payment-group-lotteryPaymentGroup .payment-group-item-text,
 .store-country-CHL #payment-group-lotteryPaymentGroup .payment-group-item-text,
